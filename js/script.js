@@ -1,3 +1,314 @@
+function myList(){
+    $.ajax({
+        url: 'https://api.jikan.moe/v3/user/silveray/animelist/completed',
+        type: 'get',
+        dataType: 'json',
+        success: function(result) {
+            let anime = result.anime
+
+            $.each(anime, function (i, data) {
+                let title = data.title
+                if (title.match("^A")) {
+                    $('#A').removeClass('d-none')
+                    $('#A').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^B")) {
+                    $('#B').removeClass('d-none')
+                    $('#B').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^C")) {
+                    $('#C').removeClass('d-none')
+                    $('#C').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^D")) {
+                    $('#D').removeClass('d-none')
+                    $('#D').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^E")) {
+                    $('#E').removeClass('d-none')
+                    $('#E').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^F")) {
+                    $('#F').removeClass('d-none')
+                    $('#F').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^G")) {
+                    $('#G').removeClass('d-none')
+                    $('#G').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^H")) {
+                    $('#H').removeClass('d-none')
+                    $('#H').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^I")) {
+                    $('#I').removeClass('d-none')
+                    $('#I').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^J")) {
+                    $('#J').removeClass('d-none')
+                    $('#J').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^K")) {
+                    $('#K').removeClass('d-none')
+                    $('#K').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^L")) {
+                    $('#L').removeClass('d-none')
+                    $('#L').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^M")) {
+                    $('#M').removeClass('d-none')
+                    $('#M').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^N")) {
+                    $('#N').removeClass('d-none')
+                    $('#N').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^O")) {
+                    $('#O').removeClass('d-none')
+                    $('#O').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^P")) {
+                    $('#P').removeClass('d-none')
+                    $('#P').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^Q")) {
+                    $('#Q').removeClass('d-none')
+                    $('#Q').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^R")) {
+                    $('#R').removeClass('d-none')
+                    $('#R').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^S")) {
+                    $('#S').removeClass('d-none')
+                    $('#S').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^T")) {
+                    $('#T').removeClass('d-none')
+                    $('#T').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^U")) {
+                    $('#U').removeClass('d-none')
+                    $('#U').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^V")) {
+                    $('#V').removeClass('d-none')
+                    $('#V').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^W")) {
+                    $('#W').removeClass('d-none')
+                    $('#W').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^X")) {
+                    $('#X').removeClass('d-none')
+                    $('#X').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^Y")) {
+                    $('#Y').removeClass('d-none')
+                    $('#Y').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else if (title.match("^Z")) {
+                    $('#Z').removeClass('d-none')
+                    $('#Z').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+
+                else {
+                    $('#other').removeClass('d-none')
+                    $('#other').append(`
+                        <div class="col">
+                            <ul>
+                                <li>${title}</li>
+                            </ul>
+                        </div>
+                    `)
+                }
+            })
+        }
+    })
+}
+
 function upcoming(){
     $('#upcoming-list').html('');
     $.ajax({
