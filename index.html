@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Presentia | Absen mudah, Info terarah</title>
+</head>
+<body class="antialiased font-sarabun" x-data="{ isOpen : false}">
+    <!-- header -->
+    <header class="fixed bg-white header min-w-full py-2 shadow" style="z-index: 1">
+        <!-- container -->
+        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+            <!-- header wrapper -->
+            <div class="header-wrapper flex items-center justify-between">
+                <!-- header logo -->
+                <div class="header-logo justify-items-center items-center p-3">
+                    <a href="index.html" class="flex flex-row justify-items-center items-center">
+                        <img src="assets/image/logo-presentia.png" class="w-10 pr-1" alt="Logo Presentia">
+                        <p class="font-semibold text-2xl leading-tight text-green-500">resentia</p>
+                    </a>
+                </div>
+
+                <!-- mobile toggle -->
+                <div id="mtog" class="pt-2 toggle md:hidden">
+                    <button @click=" isOpen = true" @keydown.escape=" isOpen = false">
+                        <svg class="m-2 h-6 w-6 fill-current text-black hover:text-green-600" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- navbar -->
+                <navbar class="navbar hidden md:block">
+                    <ul class="pt-2 flex space-x-3 text-sm font-semibold">
+                        <li>
+                            <a href="index.html" class="mr-4 active border-b-2 border-green-500
+                            pb-2 hover:text-green-500 font-bold">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#fitur" class="mr-4 border-b-2 border-transparent pb-2 
+                            hover:border-green-500 hover:text-green-500 inline-block">Fitur</a>
+                        </li>
+                        <li>
+                            <a href="#alur" class="mr-4 border-b-2 border-transparent pb-2 
+                            hover:border-green-500 hover:text-green-500 inline-block">Alur</a>
+                        </li>
+                        <li>
+                            <a href="#panduan" class="mr-4 border-b-2 border-transparent pb-2 
+                            hover:border-green-500 hover:text-green-500 inline-block">Panduan</a>
+                        </li>
+                        <li>
+                            <a href="#tim" class="mr-4 border-b-2 border-transparent pb-2 
+                            hover:border-green-500 hover:text-green-500 inline-block">Tim</a>
+                        </li>
+                        <li>
+                            <a href="#registrasi" class="cta bg-green-500 hover:bg-green-600 
+                            px-4 py-2 rounded-full text-white font-normal">Registrasi</a>
+                        </li>
+                        <li>
+                            <a href="https://bit.ly/downloadpresentia" class="cta bg-green-500 
+                            hover:bg-green-600 px-4 py-2 rounded-full text-white font-normal"
+                            target="_blank">
+                                Unduh</a>
+                        </li>
+                    </ul>
+                </navbar>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- hero section 1 -->
+    <div class="hero pt-32 lg:pt-28 pb-14">
+        <!-- container -->
+        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+            <!-- hero wrapper -->
+            <div class="hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <!-- hero text -->
+                <div class="hero-text col-span-6 px-3">
+                    <h1 class="font-bold text-4xl md:text-5xl max-w-xl text-black">
+                        <span class="leading-snug text-green-500">Presentia |</span> Absen Mudah, Info Terarah.
+                    </h1>
+                    <hr class="w-12 h-1 bg-green-500 border-green-500 rounded-full mt-8">
+                    <p class="text-base pr-0 lg:pr-4 lg:text-xl leading-relaxed mt-8 text-justify">
+                        Bersama kami menciptakan kemudahan dalam presensi dan akses informasi yang terarah seperti pengumuman, tugas-tugas perkuliahan dan perubahan jadwal dalam satu genggaman tangan.
+                    </p>
+                    <div class="flex space-x-5 mt-10 justify-start">
+                        <a href="https://bit.ly/downloadpresentia">
+                            <button class="focus:outline-none focus:ring bg-green-500 hover:bg-green-600 
+                            shadow-md px-8 py-2 rounded-lg flex items-center space-x-4">
+                                <div class="text">
+                                    <p class=" text-lg font-semibold text-white">Unduh</p>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- hero image -->
+                <div class="hero-image col-span-6 float-right w-auto h-auto">
+                    <img src="assets/image/ilustrasi/hero1.svg" alt="Ilustrasi Presentia">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hero section 1 -->
+
+    <!-- mobile navbar -->
+    <div id="mnav" class="hidden mobile-navbar md:hidden lg:hidden">
+        <!-- navbar wrapper -->
+        <div class="navbar-wrapper fixed top-0 left-0 h-full bg-white z-30 w-64 shadow-lg p-5"
+            x-show="isOpen"
+            @click.away=" isOpen = false" x-transition:enter="transition duration-300 -ml-64"
+            x-transition:enter-start="" x-transition:enter-end="transform translate-x-64"
+            x-transition:leave="transition duration-300" x-transition:enter-start=""
+            x-transition:leave-end="transform -translate-x-64">
+            <div class="close">
+                <button class="absolute top-0 right-0 mt-6 mr-4 p-2" @click=" isOpen = false">
+                    <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" 
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- navbar mobile -->
+            <ul class="pb-4">
+                <li>
+                    <a href="index.html" class="flex flex-row justify-items-center items-center">
+                        <img src="assets/image/logo-presentia.png" class="w-12 pr-1" alt="Logo Presentia">
+                        <p class="font-semibold text-2xl leading-tight text-green-500">resentia</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="divide-y divide-green-500">
+                <li><a href="index.html" class="my-4 inline-block active font-semibold">Beranda</a></li>
+                <li><a href="#fitur" class="my-4 inline-block hover:text-green-500">Fitur</a></li>
+                <li><a href="#alur" class="my-4 inline-block hover:text-green-500">Alur</a></li>
+                <li><a href="#panduan" class="my-4 inline-block hover:text-green-500">Panduan</a></li>
+                <li><a href="#tim" class="my-4 inline-block hover:text-green-500">Tim</a></li>
+                <li><a href="#registrasi" class="mb-2 mt-8 w-full text-center font-semibold cta focus:ring
+                    inline-block bg-green-500 hover:bg-green-600 px-3 py-2 rounded-lg text-white">
+                        Registrasi</a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="https://bit.ly/downloadpresentia" class="mt-2 w-full text-center focus:ring
+                    font-semibold cta inline-block bg-green-500 hover:bg-green-600 px-3 
+                    py-2 rounded-lg text-white" target="_blank">Unduh</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end mobile navbar -->
+
+    <!-- backpres -->
+    <div class="bg-white py-16">
+        <!-- container -->
+        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">            
+            <!-- title -->
+            <div data-aos="flip-left" class="grid justify-items-center items-center mb-3">
+                <h2 class="pb-2 font-bold text-3xl lg:text-4xl text-left mx-4 lg:text-center text-black leading-tight">
+                    Apa yang membuat <span class="text-green-500">Presentia terlahir?</span>
+                </h2>
+                <p class="text-base lg:text-lg leading-relaxed mt-6 mx-4 lg:mx-14 text-justify lg:text-center">Presentia lahir sebagai jawaban permasalahan yang ada di lingkungan kami seperti absensi manual, perawatan fingerprint, antrian barcode, pemalsuan absensi lokasi, keakuratan pemindaian lokasi, satu mode absensi, info yang terpisah-pisah, tidak adanya pemberitahuan langsung, mahalnya pembuatan aplikasi dan biaya pihak ketiga. Presentia lahir sebagai invers dari masalah yang ada dan dengan harapan mampu memudahkan pendidikan yang saat ini tersandung pandemi.</p>
+            </div>
+            <!-- wrapper -->
+            <div data-aos="flip-left" class="grid grid-cols-8 gap-4 items-center">
+                <!-- image -->
+                <div class="flex mx-2 col-start-1 col-span-8 lg:col-start-2 lg:col-span-6 justify-center pt-6">
+                    <img src="assets/image/presentia.gif" class="w-full align-middle" alt="GIF Presentia">
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- end backpres -->
+
+    <!-- hero section 2 -->
+    <div class="hero bg-white pt-12 pb-28">
+        <!-- container -->
+        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+            <!-- hero wrapper -->
+            <div class="hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <!-- hero image -->
+                <div class="hero-image col-span-6">
+                    <img src="assets/image/ilustrasi/hero2.svg" alt="Ilustrasi Presentia">
+                </div>
+                <!-- hero text -->
+                <div class="hero-text col-span-6 px-3">
+                    <h1 class="font-bold text-4xl md:text-5xl max-w-xl text-black leading-snug">
+                        Absensi Kehadiran Berbasis <span class="text-green-500">Lokasi dan Daring</span>
+                    </h1>
+                    <hr class="w-12 h-1 bg-green-500 border-green-500 rounded-full mt-8">
+                    <p class="text-base lg:text-xl leading-relaxed mt-8 pr-0 lg:pr-8 text-justify">
+                        Presentia hadir dengan dukungan dua mode absensi, lokasi dan daring. Menangani absensi sakit, perizinan dan fitur yang dapat mendeteksi pemalsuan lokasi.
+                    </p>
+                    <div class="flex space-x-5 mt-10 justify-start">
+                        <a href="https://bit.ly/demopresentia" target="_blank">
+                            <button class="bg-green-500 hover:bg-green-600 shadow px-6 py-2 rounded-lg 
+                            flex items-center space-x-4 focus:outline-none focus:ring">
+                                <div class="text">
+                                    <p class=" text-lg font-semibold text-white">Lihat Demo</p>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hero section 2 -->
+
+    <!-- fitur section -->
+    <div id="fitur" class="py-14 bg-green-500">
+        <!-- container -->
+        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+            <!-- title -->
+            <div class="grid justify-items-center items-center mb-3">
+                <h2 class="font-bold text-xl md:text-2xl max-w-xl text-white leading-tight">
+                    Apa yang ditawarkan Presentia?
+                </h2>
+                <hr class="w-12 h-1 bg-white border-white rounded-full my-3">
+            </div>
+            <div class="grid grid-cols-1 mb-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+                <!-- fitur -->
+                <div data-aos="flip-left" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 
+                            h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Absensi</h2>
+                    <h6 class="mt-2 text-base text text-justify lg:text-left">
+                        Pencatatan kehadiran perkuliahan baik daring maupun luring dengan pelaporan otomatis.
+                    </h6>
+                </div>
+                <div data-aos="flip-down" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8" 
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 
+                                    100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 
+                                    9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Pengumuman</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Informasi dan pengumuman penting kampus tersampaikan dengan cepat dan terarah.
+                    </h6>
+                </div>           
+                <div data-aos="flip-left" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 
+                                    18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 
+                                    16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 
+                                    18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Penugasan</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Dosen dapat memberikan tugas dengan mudah, semudah mengirimkan pesan singkat.  
+                    </h6>
+                </div>
+                <div data-aos="flip-right" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8" 
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 
+                                    2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Jadwal</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Perubahan jadwal perkuliahan dan pengingat waktu perkuliahan secara langsung sesuai jadwal terbaru.
+                    </h6>
+                </div>
+                <div data-aos="flip-up" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8" 
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 
+                                    00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 
+                                    .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Notifikasi</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Semua dengan notifikasi langsung, pengumuman, tugas, perubahan jadwal dan pelaporan mingguan.
+                    </h6>
+                </div>
+                <div data-aos="flip-right" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Integrasi</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Presentia mempunyai Bot Presentia yang digunakan dalam mengintegrasikan absensi, pengumuman dan penugasan. 
+                    </h6>
+                </div>
+                <div data-aos="flip-right" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>  
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Manajemen</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Penggunaan Bot Presentia memperkenalkan Discord sebagai media multi-platform dalam meningkatkan efisiensi dan efektifitas kerja.
+                    </h6>
+                </div>
+                <div data-aos="flip-up" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">                         
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                              </svg>                          
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Gratis</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Sebagai pihak ketiga, Presentia hadir tanpa memungut biaya sepeser pun. Presentia sepenuhnya hadir dari mahasiswa, oleh mahasiswa dan untuk mahasiswa.
+                    </h6>
+                </div>
+                <div data-aos="flip-right" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-lg rounded-lg">
+                    <div class="inline-flex overflow-hidden h-15 w-15">
+                        <div class="border-2 rounded-2xl border-opacity-10 border-gray-700 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-black text-opacity-70 h-8 w-8" 
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 
+                                    01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 
+                                    9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-bold text-xl text-black">Keamanan</h2>
+                    <h6 class="mt-2 text-base text-justify lg:text-left">
+                        Presentia tidak meminta data-data pribadi dalam autentikasi. Sebagai ganti, kami menggunakan perangkat sebagai pengidentifikasi mahasiswa.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end fitur section -->
+
+    <!-- timeline -->
+    <div id="alur" class="py-14 bg-gray-500">
+        <!-- container -->
+        <div class="container mx-auto px-4 sm:px-8 lg:px-16 xl:px-20">
+            <!-- title -->
+            <div class="grid justify-items-center items-center mb-3">
+                <h2 class="font-bold text-xl md:text-2xl max-w-xl text-green-600 leading-tight">Bagaimana cara registrasi di Presentia?</h2>
+                <hr class="w-12 h-1 bg-green-500 border-green-500 rounded-full my-3">
+            </div>
+            <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-black">
+                <!-- left -->
+                <div class="flex flex-row-reverse md:contents">
+                    <div data-aos="fade-up"
+                        class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                        <h3 class="font-semibold text-lg mb-2">1. Pendaftaran Kampus</h3>
+                        <p class="leading-tight text-justify">
+                            Presentia membuka kesempatan bagi kampus-kampus lain untuk ikut menggunakan aplikasi
+                            Presentia sebagai solusi atas masalah pencatatan kehadiran dan penyampaian informasi. Pendaftaran kampus dapat
+                            dilakukan oleh Admin kampus melalui formulir yang telah disediakan pada situs web ini.
+                        </p>
+                    </div>
+                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                        <div class="h-full w-6 flex items-center justify-center">
+                            <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                        </div>
+                        <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow"></div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="flex md:contents">
+                    <div class="col-start-5 col-end-6 mr-5 md:mx-auto relative">
+                        <div class="h-full w-6 flex items-center justify-center">
+                            <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                        </div>
+                        <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow"></div>
+                    </div>
+                    <div data-aos="fade-up"
+                        class="bg-white col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+                        <h3 class="font-semibold text-lg mb-2">2. Validasi Pendaftaran</h3>
+                        <p class="leading-tight text-justify">
+                            Presentia akan melakukan validasi dari formulir registrasi yang telah dikirimkan  dengan batas waktu maksimal
+                            1x24 Jam. Validasi ini bertujuan untuk membuktikan kevalidan kampus yang
+                            didaftarkan.
+                        </p>
+                    </div>
+                </div>
+                <!-- left -->
+                <div class="flex flex-row-reverse md:contents">
+                    <div data-aos="fade-up"
+                        class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                        <h3 class="font-semibold text-lg mb-2">3. Pemberitahuan Pendaftaran</h3>
+                        <p class="leading-tight text-justify">
+                            Presentia akan mengirimkan keputusan apakah pendaftaran disetujui maupun ditolak melalui email yang telah
+                            didaftarkan serta prosedur selanjutnya jika pendaftaran disetujui.
+                        </p>
+                    </div>
+                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                        <div class="h-full w-6 flex items-center justify-center">
+                            <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                        </div>
+                        <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow"></div>
+                    </div>
+                </div>
+                <!-- left -->
+                <div class="flex flex-row-reverse md:contents">
+                    <div data-aos="fade-up"
+                        class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                        <h3 class="font-semibold text-lg mb-2">4. Registrasi Server</h3>
+                        <p class="leading-tight text-justify">
+                            Membuat server Discord berdasarkan template server yang disediakan oleh Presentia melalui email. Registrasikan server dengan menambahkan Bot Presentia menggunakan kode yang dikirimkan. Catat pula kode verifikasi mahasiswa.
+                        </p>
+                    </div>
+                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                        <div class="h-full w-6 flex items-center justify-center">
+                            <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                        </div>
+                        <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow"></div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="flex md:contents">
+                    <div class="col-start-5 col-end-6 mr-5 md:mx-auto relative">
+                        <div class="h-full w-6 flex items-center justify-center">
+                            <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                        </div>
+                        <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow"></div>
+                    </div>
+                    <div data-aos="fade-up"
+                        class="bg-white col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+                        <h3 class="font-semibold text-lg mb-2">5. Konfigurasi Server</h3>
+                        <p class="leading-tight text-justify">
+                            Lakukan konfigurasi pada server discord, dengan menambahkan data keperluan dalam presensi seperti mengatur koordinat absensi mode lokasi, daftar kelas, mata kuliah, jadwal dan mahasiswa sesuai dengan template data minimal dan prosedur dalam buku panduan.
+                        </p>
+                    </div>
+                </div>
+                <!-- left -->
+                <div class="flex flex-row-reverse md:contents">
+                    <div data-aos="fade-up"
+                        class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                        <h3 class="font-semibold text-lg mb-2">6. Registrasi Mahasiswa</h3>
+                        <p class="leading-tight text-justify">
+                            Mahasiswa mengunduh aplikasi Presentia dan mendaftarkan perangkatnya menggunakan kode kampus dan nomor identitas mahasiswanya berdasarkan data konfigurasi. Presentia sudah dapat digunakan oleh mahasiswa.
+                        </p>
+                    </div>
+                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                        <div class="h-full w-6 flex items-center justify-center">
+                            <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                        </div>
+                        <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end timeline -->
+
+    <!-- form -->
+    <div id="registrasi" class="py-14 bg-green-500">
+        <!-- container -->
+        <div class="container sm:px-8 lg:px-16 xl:px-20 mx-auto">
+            <div class="grid px-px grid-cols-1 mb-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-3">
+                <!-- text -->
+                <div class="p-4 mx-3 flex-row justify-center items-center">
+                    <h1 class="font-bold text-4xl md:text-5xl text-white leading-snug">
+                        Daftarkan Kampus Anda Dengan Presentia
+                    </h1>
+                    <hr class="w-14 h-1 bg-white border-white rounded-full mt-8 mb-6">
+                    <p class="text-xl lg:text-2xl text-white leading-relaxed">
+                        Absen Mudah, Info Terarah.
+                    </p>
+                    <div class="hero-image flex pt-10 justify-center items-center lg:pr-12">
+                        <img src="assets/image/ilustrasi/hero3.svg" class="w-5/6" alt="Ilustrasi Presentia">
+                    </div>
+                </div>
+                <div class="p-4 lg:p-7 flex flex-row flex-wrap">
+                    <!-- form registrasi -->
+                    <form data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" id="my-form"
+                        name="my-form" action="proses-register.php" method="POST"
+                        class="md:w-1/2-screen m-0 p-5 bg-white w-full h-full shadow rounded-lg"
+                        onsubmit="return validateForm()">
+                        <div class="text-2xl text-black font-semibold pb-2 text-center">
+                            Registrasi
+                            <div class="grid justify-items-center items-center">
+                                <hr class="w-12 h-1 bg-green-500 border-green-500 rounded-full my-3">
+                            </div>
+                        </div>
+                        <div class="flex-col flex py-5">
+                            <label class="pb-2 text-black font-semibold">Nama Perguruan Tinggi
+                                <span class="text-red">*</span>
+                            </label>
+                            <input id="nama_pt" name="nama_pt" type="text" class="masukan p-2 shadow rounded-lg 
+                            focus:outline-none focus:ring" placeholder="STMIK Komputama Majenang" minlength="10"
+                                maxlength="100" required autocomplete="off">
+                        </div>
+                        <div class="flex-col flex py-5">
+                            <label class="pb-2 text-black font-semibold">Nama Unit Penanggung Jawab
+                                <span class="text-red">*</span>
+                            </label>
+                            <input id="penanggungjawab" name="penanggungjawab" type="text" class="masukan p-2 
+                            shadow rounded-lg focus:outline-none focus:ring" placeholder="KaBag Kemahasiswaan Austin Calvin" minlength="3" maxlength="100" required autocomplete="off">
+                        </div>
+                        <div class="flex-col flex py-5">
+                            <label class="pb-2 text-black font-semibold">Email Unit
+                                <small class="font-light">(Email yang digunakan untuk menerima hasil pendaftaran)</small>
+                                <span class="text-red">*</span>
+                            </label>
+                            <input id="email" name="email" type="email" class="masukan p-2 shadow rounded-lg 
+                            focus:outline-none focus:ring" placeholder="presentia@stmikxxx.ac.id" minlength="10"
+                                maxlength="100" required autocomplete="off">
+                        </div>
+                        <div class="flex-col flex py-5">
+                            <label class="pb-2 text-black font-semibold">No. Telepon Unit
+                                <span class="text-red">*</span> </label>
+                            <input id="telp" name="telp" type="text" class="masukan p-2 shadow rounded-lg 
+                            focus:outline-none focus:ring" placeholder="021XXXXXXXX" minlength="8" maxlength="20"
+                                required autocomplete="off">
+                        </div>
+                        <div class="mt-2 pt-2">
+                            <button type="submit" class="shadow rounded-lg p-3 bg-green-500 hover:bg-green-600 
+                            text-white w-full focus:outline-none focus:ring">
+                                Bergabung dengan Presentia</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end form -->
+
+    <!-- panduan section -->
+    <div id="panduan" class="py-14 bg-gray-500">
+        <!-- container -->
+        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+            <!-- title -->
+            <div class="grid justify-items-center items-center text-center mb-3">
+                <h2 class="font-bold text-xl md:text-2xl max-w-xl text-green-600 leading-tight">
+                    Bagaimana cara menggunakan Presentia?
+                </h2>
+                <hr class="w-12 h-1 bg-green-500 border-green-500 rounded-full my-3">
+            </div>
+            <div class="grid grid-cols-1 mb-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 text-center">
+                <!-- panduan -->
+                <div id="panduan1" data-aos="flip-left" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-md rounded-lg text-black">
+                    <div class="inline-flex justify-center overflow-hidden h-15 w-15">
+                        <div class="mt-10 mb-3">
+                            <svg class="svg1 text-green-600 text-opacity-80 h-16 w-16" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M10 4A4 4 0 0 0 6 8A4 4 0 0 0 10 12A4 4 0 0 0 14 8A4 4 0 0 0 10 4M10 6A2 2 0 0 1 12 8A2 2 0 0 1 10 10A2 2 0 0 1 8 8A2 2 0 0 1 10 6M17 12C16.84 12 16.76 12.08 16.76 12.24L16.5 13.5C16.28 13.68 15.96 13.84 15.72 14L14.44 13.5C14.36 13.5 14.2 13.5 14.12 13.6L13.16 15.36C13.08 15.44 13.08 15.6 13.24 15.68L14.28 16.5V17.5L13.24 18.32C13.16 18.4 13.08 18.56 13.16 18.64L14.12 20.4C14.2 20.5 14.36 20.5 14.44 20.5L15.72 20C15.96 20.16 16.28 20.32 16.5 20.5L16.76 21.76C16.76 21.92 16.84 22 17 22H19C19.08 22 19.24 21.92 19.24 21.76L19.4 20.5C19.72 20.32 20.04 20.16 20.28 20L21.5 20.5C21.64 20.5 21.8 20.5 21.8 20.4L22.84 18.64C22.92 18.56 22.84 18.4 22.76 18.32L21.72 17.5V16.5L22.76 15.68C22.84 15.6 22.92 15.44 22.84 15.36L21.8 13.6C21.8 13.5 21.64 13.5 21.5 13.5L20.28 14C20.04 13.84 19.72 13.68 19.4 13.5L19.24 12.24C19.24 12.08 19.08 12 19 12H17M10 13C7.33 13 2 14.33 2 17V20H11.67C11.39 19.41 11.19 18.77 11.09 18.1H3.9V17C3.9 16.36 7.03 14.9 10 14.9C10.43 14.9 10.87 14.94 11.3 15C11.5 14.36 11.77 13.76 12.12 13.21C11.34 13.08 10.6 13 10 13M18.04 15.5C18.84 15.5 19.5 16.16 19.5 17.04C19.5 17.84 18.84 18.5 18.04 18.5C17.16 18.5 16.5 17.84 16.5 17.04C16.5 16.16 17.16 15.5 18.04 15.5Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-semibold text-xl">Panduan Admin</h2>
+                    <h6 class="mt-2 text-base px-1 lg:px-4">
+                        Panduan Admin untuk mengelola server Discord aplikasi Presentia.
+                    </h6>
+                    <div class="flex space-x-5 mt-10 mb-10 justify-center">
+                        <a href="https://bit.ly/panduanpresentiaadmin">
+                            <button class="buttonp1 focus:outline-none focus:ring bg-green-500 hover:bg-green-600 
+                            shadow-md px-6 py-2 rounded-full flex items-center space-x-4">
+                                <div class="text">
+                                    <p class=" text-lg font-semibold text-white">Unduh</p>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="panduan2" data-aos="flip-left" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-md rounded-lg text-black">
+                    <div class="inline-flex justify-center overflow-hidden h-15 w-15">
+                        <div class="mt-10 mb-3">
+                            <svg class="svg2 text-green-600 text-opacity-80 h-16 w-16" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20,17A2,2 0 0,0 22,15V4A2,2 0 0,0 20,2H9.46C9.81,2.61 10,3.3 10,4H20V15H11V17M15,7V9H9V22H7V16H5V22H3V14H1.5V9A2,2 0 0,1 3.5,7H15M8,4A2,2 0 0,1 6,6A2,2 0 0,1 4,4A2,2 0 0,1 6,2A2,2 0 0,1 8,4Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-semibold text-xl">Panduan Dosen</h2>
+                    <h6 class="mt-2 text-base lg:px-4">
+                        Panduan Dosen untuk mengelola aplikasi Presentia melalui Discord.
+                    </h6>
+                    <div class="flex space-x-5 mt-10 mb-10 justify-center">
+                        <a href="https://bit.ly/panduanpresentiadosen">
+                            <button class="buttonp2 focus:outline-none focus:ring bg-green-500 hover:bg-green-600 
+                            shadow-md px-6 py-2 rounded-full flex items-center space-x-4">
+                                <div class="text">
+                                    <p class=" text-lg font-semibold text-white">Unduh</p>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="panduan3" data-aos="flip-left" class="flex flex-col bg-white p-6 mx-2 mt-2 shadow-md rounded-lg text-black">
+                    <div class="inline-flex justify-center overflow-hidden h-15 w-15">
+                        <div class="mt-10 mb-3">                            
+                            <svg class="svg3 text-green-600 text-opacity-80 h-16 w-16" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3M18.82 9L12 12.72L5.18 9L12 5.28L18.82 9M17 16L12 18.72L7 16V12.27L12 15L17 12.27V16Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="mt-6 font-semibold text-xl">Panduan Mahasiswa</h2>
+                    <h6 class="mt-2 text-base lg:px-4">
+                        Panduan untuk Mahasiswa dalam penggunaan aplikasi Presentia.
+                    </h6>
+                    <div class="flex space-x-5 mt-10 mb-10 justify-center">
+                        <a href="https://bit.ly/panduanpresentiamahasiswa">
+                            <button class="buttonp3 focus:outline-none focus:ring bg-green-500 hover:bg-green-600 
+                            shadow-md px-6 py-2 rounded-full flex items-center space-x-4">
+                                <div class="text">
+                                    <p class=" text-lg font-semibold text-white">Unduh</p>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- end panduan section -->
+    
+    <!-- team card -->
+    <div id="tim" class="bg-green-500 py-10">
+        <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+            <!-- team title -->
+            <div class="grid grid-cols-1 justify-items-center items-center mb-3">
+                <h2 class="font-bold text-xl md:text-2xl max-w-xl text-white leading-tight pt">Siapa kami? kenali Sulaimu lebih jauh</h2>
+                <hr class="w-12 h-1 bg-white border-white rounded-full my-3">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+                <!-- card -->
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="flex flex-col items-center justify-center bg-white p-6 mx-3 mt-2 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+                        <img src="assets/image/tim/awal.jpg" alt="Awal Ariansyah" class="h-full w-full">
+                    </div>
+                    <a href="https://snowfluke.github.io">
+                        <h2 class="mt-6 font-bold text-xl text-green-500">Awal Ariansyah</h2>
+                    </a>
+                    <h6 class="mt-2 text-sm font-medium">Javascript Developer</h6>
+                </div>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="flex flex-col items-center justify-center bg-white p-6 mx-3 mt-2 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40">
+                        <img src="assets/image/tim/rafiq.jpg" alt="Rafiq Chasnan Habibi" class="h-full w-full">
+                    </div>
+                    <a href="https://web.facebook.com/rafiqchasnanhabibi">
+                        <h2 class="mt-6 font-bold text-xl text-green-500">Rafiq Chasnan Habibi</h2>
+                    </a>
+                    <h6 class="mt-2 text-sm font-medium">Quality Control</h6>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="flex flex-col items-center justify-center bg-white p-6 mx-3 mt-2 shadow rounded-lg">
+                    <div class="inline-flex shadow-xl rounded-full overflow-hidden h-40 w-40">
+                        <img src="assets/image/tim/willy.jpg" alt="Willy Setiawan" class="h-full w-full">
+                    </div>
+                    <a href="https://web.facebook.com/willysetiawan29">
+                        <h2 class="mt-6 font-bold text-xl text-green-500">Willy Setiawan</h2>
+                    </a>
+                    <h6 class="mt-2 text-sm font-medium">Fullstack Developer</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end team card -->
+
+    <!-- footer -->
+    <div class="bg-green-700 py-4">
+        <footer class="flex flex-wrap items-center justify-between p-3 m-auto">
+            <div class="container mx-auto flex flex-col flex-wrap items-center justify-between">
+                <div class="flex mx-auto text-white text-center font-semibold items-center">
+                    Dipersembahkan oleh. Sulaimu
+                </div>
+                <div class="flex pt-2 mx-auto text-white text-center font-semibold items-center">
+                    <img src="assets/image/tim/sulaimu.png" alt="Sulaimu" class="w-12 px-1">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- end footer -->
+
+    <div class="fixed z-30 bottom-0 right-0 mr-6 mb-6">
+        <a id="back2Top" class="text-white block bg-black bg-opacity-40 hover:bg-opacity-60 rounded-md" href="">
+            <span class="hidden">Kembali ke atas</span>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" class="h-10 w-10">
+                <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
